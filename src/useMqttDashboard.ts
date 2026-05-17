@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import mqtt, { type MqttClient } from 'mqtt'
-import { type TelemetryPayload, isStaleBrokerSnapshot, parseTelemetry } from './telemetry'
+import { type TelemetryPayload, parseTelemetry } from './telemetry'
 
 export type ConnState = 'idle' | 'connecting' | 'connected' | 'error'
 
